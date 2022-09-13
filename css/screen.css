@@ -1,0 +1,144 @@
+:root {
+    --color-green: #3ba55d;
+    --dark-gray: #202225;
+    --light-gray: #37393f;
+    --dark-mobile-bg: #212328;
+    --white: #fff;
+    --gray: #76777b;
+    --gray-bg: #f4f5f6;
+    /* bg-button */
+}
+
+.btn-server {
+    background-color: var(--light-gray);
+    color: var(--color-green)
+}
+
+ul,
+li {
+    list-style: none
+}
+
+a {
+    text-decoration: none
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+* {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 16px;
+}
+
+@media (max-width: 749px) {
+    .avatar {
+        width: 3rem;
+        height: 3rem;
+        border-radius: 3rem;
+    }
+
+    .mobile-menu {
+        background: var(--dark-mobile-bg);
+        position: fixed;
+        bottom: 0;
+        width: 100vw;
+    }
+
+    .mobile-menu--list {
+        display: flex;
+        min-height: 4rem;
+        /* 64px */
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .mobile-menu--link {
+        color: var(--white)
+    }
+
+    section.ogloszenia {
+        background-color: var(--gray-bg);
+        padding: 1rem;
+        font-weight: 700;
+        font-size: 1.4375rem;
+        height: 100vh;
+    }
+
+    .description {
+        margin: 1rem 0.5rem;
+        color: var(--gray);
+        font-size: .9rem;
+    }
+
+    .news-wrapper {
+        background-color: #fff;
+        padding: 2rem 1rem;
+        border-radius: 1rem;
+    }
+
+    .news-wrapper>header {
+        /* background-color: red; */
+    }
+
+    .news-wrapper>header>h2 {
+        font-weight: 600;
+        font-size: 1.25rem;
+    }
+
+    .info .avatar {
+        grid-area: avatar;
+        /* max-width: 3rem; */
+    }
+
+    .info .author {
+        grid-area: author;
+    }
+
+    .info .added-date {
+        grid-area: added-date;
+    }
+
+    .news-wrapper .info {
+        display: grid;
+        grid-template-areas:
+            "avatar author"
+            "avatar added-time"
+        ;
+
+    }
+
+    .news-wrapper>p {
+        font-size: .85rem;
+        font-weight: normal;
+        line-height: 1.1rem;
+        padding: .3rem;
+        color: #75767a;
+    }
+
+    .news-wrapper-footer--author {
+        grid-area: author;
+    }
+
+    .news-wrapper-footer--comments {
+        grid-area: comments;
+    }
+
+    .news-wrapper>footer {
+        /* background-color: red; */
+        margin-top: 1rem;
+        /* padding: 0 .5rem; */
+        display: grid;
+        grid-template-areas: "author comments";
+        justify-content: space-between;
+        font-size: 1rem;
+    }
+
+    .news-wrapper a {
+        color: #0a76d8;
+        font-size: .875rem;
+    }
+
+
+}
